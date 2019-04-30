@@ -53,6 +53,12 @@
   border: 1px solid gray;
 }
 
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
 .navbarspace {
   margin-left: 10px;
 }
@@ -64,6 +70,12 @@
 .under-image {
   max-width: 57.8%;
 }
+
+.heart-img {
+  height: 25px;
+  widows: 25px;
+}
+
 .bottompart {
   max-width: 57.8%;
   height: 100px;
