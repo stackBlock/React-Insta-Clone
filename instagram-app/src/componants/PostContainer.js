@@ -11,7 +11,7 @@ function PostContainer(props) {
       <Header logo={props.gram.thumbnailUrl} name={props.gram.username} />
       <MainImage mainImg={props.gram.imageUrl} />
 
-      <CommentSection comments={props.gram.comments} />
+      <CommentSection comments={props.gram} />
     </div>
   );
 }

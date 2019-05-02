@@ -1,5 +1,6 @@
 import React from "react";
 import PostContainer from "./componants/PostContainer";
+import Dom from "./Dom";
 import { Container } from "reactstrap";
 import toppic from "./ig_search_bar.png";
 
@@ -43,15 +44,7 @@ class App extends React.Component {
       <div>
         <Container>
           <img src={toppic} className="topimage" alt="logo" />
-          {/* <Row className="header">
-<Col xs="1">.col</Col>
-<Col xs="4">.col</Col>
-<Col xs="4">.col</Col>
-<Col xs="1">.col</Col>
-<Col xs="1">.col</Col>
-<Col xs="1">.col</Col>
-</Row> */}
-          {/* this is the input  */}
+
           <input
             type="text"
             value={this.state.gramText}
@@ -62,6 +55,7 @@ class App extends React.Component {
           {this.state.myData.map(gram => (
             <PostContainer gram={gram} key={gram.timestamp} />
           ))}
+          <Dom />
         </Container>
       </div>
     );
